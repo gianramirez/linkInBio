@@ -1,11 +1,27 @@
 /* Color Pallette from www.color-hex.com/color-palettes */
 
 :root {
-    --bluest-color: #7289da;
+    --bluest-color: #3b5998;
+    --second-blue: #8b9dc3;
     --white: #ffffff;
     --grey: #99aab5;
     --some-dark-black: #2c2f33;
     --darkest-black: #23272a;
+}
+
+body {
+    background: var(--bluest-color);
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .circle-shape {
@@ -23,4 +39,43 @@
     margin: 0 auto;
     height: 100%;
     width: auto;
+}
+
+a {
+    color: var(--grey);
+    text-decoration: none;
+}
+
+.li-link {
+    color: var(--darkest-black);
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.link-list-item {
+    border: 1px solid var(--white);
+    box-sizing: border-box;
+    margin: 20px auto;
+    color: var(--darkest-black);
+    padding: 15px;
+    text-align: center;
+    transition: all 0.15s;
+    border-radius: 2px;
+}
+
+.link-list-item:hover,
+a:hover {
+    color: var(--some-dark-black);
+    border-color: var(--darkest-black);
+    text-shadow: 0 0 2em var(--some-dark-black);
+}
+
+.link-list-item-img {
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+}
+
+.blue {
+    background: var(--second-blue);
 }
